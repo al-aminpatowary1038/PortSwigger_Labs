@@ -1,0 +1,15 @@
+## How to detect SQL injection vulnerabilities
+1. ' and look for errors or other anomalies.
+2. Boolean conditions such as OR 1=1 and OR 1=2, and look for differences in the application's responses.
+3. Payloads designed to trigger time delays when executed within a SQL query
+4. Payloads designed to trigger an out-of-band network interaction when executed within a SQL query
+
+
+## SQL injection in different parts of the query
+Most SQL injection vulnerabilities occur within the WHERE clause of a SELECT query.
+
+Some other common locations where SQL injection arises are:
+1. In UPDATE statements, within the updated values or the WHERE clause.
+2. In INSERT statements, within the inserted values.
+3. In SELECT statements, within the table or column name.
+4. In SELECT statements, within the ORDER BY clause. 
