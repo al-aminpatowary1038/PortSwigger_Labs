@@ -1,3 +1,4 @@
+## SQL injection UNION attack, finding a column containing text
 main url for proudct category:==>
 https://0a85001804dcacad813ebb68001900b1.web-security-academy.net/filter?category=Clothing%2c+shoes+and+accessories
 

@@ -1,3 +1,5 @@
+##SQL injection UNION attack, determining the number of columns returned by the query
+
 main url==> 
 https://0aae00a10318a7c881ac2f74003d00d7.web-security-academy.net/filter?category=Clothing%2c+shoes+and+accessories 
 
