@@ -18,5 +18,3 @@ https://0aad006004a4b7ce802c443000df0094.web-security-academy.net/filter?categor
 
 6. find the database type and version by using the following query:
 https://0aad006004a4b7ce802c443000df0094.web-security-academy.net/filter?category=Lifestyle'  union select version(),null--+
-
-t
