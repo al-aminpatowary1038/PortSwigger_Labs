@@ -1,0 +1,26 @@
+## Username enumeration via response timing
+
+to solve this lab : 
+
+first we find the valid username ==> 
+1. capture the login request by burpsuit
+2. send it to indruder 
+3. select the username position to perfrom the snaper attack
+4. in payload section  
+    payload type = Simple List
+    comfiguration section add the payloads you have (username lists)
+5. perfrom the attack
+6. in attack result List check the length which one is different from other 
+7. view response : if it show " Incorrect password "
+    that means this is the valid username
+
+after finding valid username now find the password==>  
+1. now back to intruder and set the valid username in username position and select the password position to perfrom the snaper attack
+2. in payload section  
+    payload type = Simple List
+    comfiguration section add the payloads you have (password)
+3. perfrom the attack
+4. in attack result List check the length which one is different from other 
+5. view response : if it show " 302 Found "
+    that means you successfully login.
+     

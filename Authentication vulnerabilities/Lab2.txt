@@ -1,0 +1,22 @@
+##2FA simple bypass 
+to solve this lab first we need to login given my account
+1. Given 
+ my credentials ==> wiener:peter
+ After login  my account with username and password
+ system redirect it an authenticaton page like:
+ https://0aa2001d04c6645082196f170007004a.web-security-academy.net/login2
+ after given the security code
+ system redirect in my-account page like: 
+ https://0aa2001d04c6645082196f170007004a.web-security-academy.net/my-account?id=wiener
+
+
+Now login with 
+    Victim's credentials ==?> carlos:montoya
+    After login  my account with username and password
+    system redirect it an authenticaton page like:
+    https://0aa2001d04c6645082196f170007004a.web-security-academy.net/login2
+
+    now we cab chagne the url to bypass the 2FA like 
+        https://0aa2001d04c6645082196f170007004a.web-security-academy.net/my-account?id=carlos
+        
+    and the 2FA is bypassed.

